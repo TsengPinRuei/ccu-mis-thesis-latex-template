@@ -1,0 +1,86 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{ccu-bibliography}[2026/09/24 CCU MIS thesis references]
+\RequirePackage[backend=biber,style=apa,sortcites=true]{biblatex}
+
+% format.pdf p. 6 requires English-first citations and Chinese-first references.
+% "chinese" is an explicit bibliography keyword, never inferred from a title.
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map[overwrite]{
+      \step[fieldset=presort,fieldvalue={english}]
+    }
+    \map[overwrite]{
+      \step[fieldsource=keywords,
+        match=\regexp{(^|,)\s*chinese\s*(,|$)},final]
+      \step[fieldset=presort,fieldvalue={z-chinese}]
+    }
+  }
+}
+
+% Keep APA's author/year/title order. A manually maintained Chinese author
+% rank substitutes for the author sort field; it does not replace year sorting.
+\DeclareSortingTemplate{ccu}{
+  \sort{\field{presort}}
+  \sort{
+    \field{sortkey}
+    \field{sortname}
+    \field{author}
+    \field{editor}
+    \field{sorttitle}
+    \field{title}
+  }
+  \sort{\field{pubstate}}
+  \sort{
+    \field{sortyear}
+    \field{year}
+    \field{eventyear}
+    \literal{-2000000000}
+  }
+  \sort{\field{month}\field{eventmonth}\literal{-2000000000}}
+  \sort{\field{day}\field{eventday}\literal{-2000000000}}
+  \sort{\field{sorttitle}\field{title}}
+  \sort{\field{volume}\literal{0}}
+}
+\ExecuteBibliographyOptions{sorting=ccu}
+
+% APA's normal citation macros supply the semicolons between distinct authors.
+% This command changes only the outer parentheses for a Chinese paragraph.
+\newcommand*{\ccu@fullwidthparens}[1]{（#1）}
+\DeclareDelimcontextAlias{ccucite}{parencite}
+\DeclareCiteCommand{\ccucite}[\ccu@fullwidthparens]
+  {\usebibmacro{cite:init}%
+   \usebibmacro{prenote}%
+   \toggletrue{apa:inpcite}}
+  {\usebibmacro{citeindex}%
+   \usebibmacro{cite}%
+   \usebibmacro{cite:post}}
+  {}
+  {\usebibmacro{postnote}%
+   \togglefalse{apa:inpcite}}
+
+% The thesis body rule takes precedence over generic APA manuscript spacing.
+% 12 bp type on an 18 bp baseline is the template's explicit 1.5-line setting.
+\renewcommand*{\bibfont}{\linespread{1}\fontsize{12bp}{18bp}\selectfont}
+\setlength{\bibhang}{0.5in}
+\setlength{\bibitemsep}{0pt}
+\setlength{\bibparsep}{0pt}
+\defbibenvironment{bibliography}
+  {\list{}{\setlength{\leftmargin}{\bibhang}%
+           \setlength{\itemindent}{-\leftmargin}%
+           \setlength{\itemsep}{\bibitemsep}%
+           \setlength{\parsep}{\bibparsep}%
+           \setlength{\topsep}{0pt}%
+           \setlength{\partopsep}{0pt}}}
+  {\endlist}
+  {\item}
+
+\newcommand*{\ccureferences}{%
+  \chapter*{參考文獻}%
+  \addcontentsline{toc}{chapter}{參考文獻}%
+  \markboth{參考文獻}{參考文獻}%
+  \begingroup
+    \printbibliography[heading=none,keyword=chinese]%
+    \printbibliography[heading=none,notkeyword=chinese]%
+  \endgroup
+}
+\endinput

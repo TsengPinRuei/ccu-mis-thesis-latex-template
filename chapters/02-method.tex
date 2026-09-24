@@ -1,0 +1,33 @@
+\chapter{研究方法與版型示例}\label{chap:method}
+\section{資料與引文}
+以下同組引文故意以中文鍵在前傳入，輸出仍應英文在前、中文在後：
+\ccucite{wang2024,adams2022,lin2023,brown2023}。
+文末文獻則依中文姓氏筆畫、英文字母排序。這些文獻全部是虛構佔位資料。
+
+English citation example: \parencite{brown2023,adams2022}.
+Narrative citation example: \textcite{adams2022}.
+中文引用請使用全形外括號的引用指令；作者必須校對各筆來源資料。
+
+\begin{table}[htbp]
+  \caption{示意資料彙整 (佔位資料)}\label{tab:sample}
+  \centering
+  \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrr@{}}
+    \hline
+    組別 (group) & 樣本數 (n) & 示意平均數 \\
+    \hline
+    第一組 & 12 & 3.5 \\
+    第二組 & 18 & 4.0 \\
+    \hline
+  \end{tabular*}
+  \ccunote{數值僅供版型驗證 (非研究結果)。}
+  \ccusource{\fullcite{wang2024}.}
+\end{table}
+
+\section{公式與交叉引用}
+公式~\ccueqref{eq:mean} 示範正文公式及靠左的編號。
+圖表和公式均使用自動計數，不需手動輸入編號。
+\begin{equation}\label{eq:mean}
+  \bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i
+\end{equation}
+範例公式不代表研究模型；若論文有推導，請在此說明變數及適用條件。
+附錄公式見~\ccueqref{eq:appendix-a}、\ccueqref{eq:appendix-b}。

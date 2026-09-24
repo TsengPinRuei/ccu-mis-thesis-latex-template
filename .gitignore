@@ -1,0 +1,23 @@
+/output/
+/tmp/
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.lof
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+/fonts/*
+!/fonts/README.md
+
+# Local system, Python, and code index artifacts
+.DS_Store
+__pycache__/
+*.py[cod]
+/.codebase-memory/

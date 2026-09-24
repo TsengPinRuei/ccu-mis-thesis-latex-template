@@ -1,0 +1,28 @@
+\documentclass{ccu-thesis}
+\usepackage{expl3}
+\geometry{paperwidth=\ThesisSpineWidth,paperheight=297mm,
+  left=1mm,right=1mm,top=10mm,bottom=10mm}
+\ExplSyntaxOn
+\NewDocumentCommand{\ccuvertical}{m}{
+  \tl_set:Nx \l_tmpa_tl {#1}
+  \tl_map_inline:Nn \l_tmpa_tl {\hbox_to_wd:nn {\linewidth}{\hfil ##1\hfil}}
+}
+\ExplSyntaxOff
+\begin{document}
+\ccufooterfalse
+\ccuwatermarkfalse
+\setlength{\parindent}{0pt}
+\fontsize{\ThesisSpineFontSize bp}{\ThesisSpineFontSize bp}\selectfont
+\centering
+\ThesisCohort\par 級\par
+\vspace{5mm}
+\ccuvertical{\ThesisUniversity\ThesisInstitute}
+\vspace{5mm}
+\ccuvertical{\ThesisDocumentName}
+\vspace{7mm}
+\ccuvertical{\ThesisTitleZh}
+\vfill
+\ccuvertical{\ThesisAuthor}
+\vspace{5mm}
+撰\par
+\end{document}
