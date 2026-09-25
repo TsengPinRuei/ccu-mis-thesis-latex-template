@@ -57,7 +57,7 @@ xelatex -no-shell-escape -interaction=nonstopmode -halt-on-error -output-directo
 - 需要 fontspec、xeCJK、geometry、fix-cm、amsmath、amssymb、graphicx、xcolor、titlesec、
   tocloft、caption、zhnumber、pdfpages、eso-pic、hyperref、bookmark、etoolbox、
   indentfirst、biblatex、biblatex-apa。一般完整 TeX Live／MacTeX 可透過套件管理器補齊。
-  BasicTeX 使用者可依缺少的 .sty 名稱以 tlmgr 安裝相應套件。
+  若使用 BasicTeX，請依缺少的 .sty 名稱以 tlmgr 安裝相應套件。
 - **中文必須有標楷體 DFKai-SB（嵌入 PDF 的名稱為 DFKaiShu-SB）**；
   **英文必須有 Times New Roman**（含 Bold、Italic）。
   標楷體與 Times New Roman 未隨專案散布，請使用合法授權的字型。
@@ -77,9 +77,9 @@ xelatex -no-shell-escape -interaction=nonstopmode -halt-on-error -output-directo
 
 | 欄位 | 用途 |
 | --- | --- |
-| ThesisProgram | mis：資訊管理研究所；medical：醫療資訊管理研究所 |
+| ThesisProgram | im：資訊管理研究所；him：醫療資訊管理研究所 |
 | ThesisTitleZh / ThesisTitleEn | 中英文題目；共用中文題目保持純文字，由封面自動換行，修改後重看封面與書背 |
-| ThesisAuthor | 作者 |
+| ThesisAuthor | 填入姓名 |
 | ThesisAdvisor / ThesisAdvisorTitle | 指導教授與稱謂，可依實際需要加入共同指導教授換行 |
 | ThesisDegree | 預設碩士；來源未支持博士格式，改字樣不代表博士格式已驗證 |
 | ThesisROCYear / ThesisMonth | 民國出版年、月份 |
@@ -112,11 +112,11 @@ proposal.tex 會以同一套設定輸出「碩士論文提案書」，並自動�
 中文正文使用全形括號（包含 \ccucite 和 \ccueqref），表格括號半形，
 英文段落用 \parencite／\textcite。公式本身的編號依規範保持半形括號，且置左。
 中文文獻必須標 keywords={chinese} 並維護人工確認的 sortkey；
-英文文獻不設 sortkey，由 Biber 自動按作者排序。文末 \ccureferences 放在正文之後、附錄之前。
+英文文獻不設 sortkey，由 Biber 按 `author` 欄位自動排序。文末 \ccureferences 放在正文之後、附錄之前。
 
 ## 規範差異及合理預設
 
-使用者於 2026-09-24 已裁定來源的三處衝突：
+來源的三處衝突採用以下設定：
 
 1. 第 5 頁：依圖 5，校名粗體 36 點，其餘封面 24 點。
 2. 第 1 頁對第 9–10 頁：依正式條文，封面 i，審定書 ii，前置頁連續編排。
@@ -129,8 +129,8 @@ proposal.tex 會以同一套設定輸出「碩士論文提案書」，並自動�
 兩字段首縮排、章節 18/14/12 點、無字封底、數學符號字型、書背 15 mm 寬
 都是依示例或未指定事項採用的明示預設。
 
-assets/watermark.png 是從 format.pdf 第 10 頁原樣擷取的含透明通道校徽；
-範例本身已刷淡，無需再疊加透明度。中心置中、155 mm 寬近似原範例；
+使用 assets/CCU.jpg 作為校徽浮水印，保留原始淡藍色與白色背景。
+模板直接載入，採頁面置中、155 mm 寬等比例顯示；
 規範沒有另定精確尺寸。封面、審定書及封底不額外加浮水印，
 誌謝起至附錄均有。來源與用途見 [assets/README.md](assets/README.md)。
 

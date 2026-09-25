@@ -53,9 +53,9 @@
   \fi
 }
 \def\ThesisUniversity{國立中正大學}
-\ifdefstring{\ThesisProgram}{mis}{\def\ThesisInstitute{資訊管理研究所}}{
-  \ifdefstring{\ThesisProgram}{medical}{\def\ThesisInstitute{醫療資訊管理研究所}}{
-    \ClassError{ccu-thesis}{Unknown ThesisProgram}{Use mis or medical.}
+\ifdefstring{\ThesisProgram}{im}{\def\ThesisInstitute{資訊管理研究所}}{
+  \ifdefstring{\ThesisProgram}{him}{\def\ThesisInstitute{醫療資訊管理研究所}}{
+    \ClassError{ccu-thesis}{Unknown ThesisProgram}{Use im or him.}
   }
 }
 \ifdefstring{\ThesisMode}{proposal}{

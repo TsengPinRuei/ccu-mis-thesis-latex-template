@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-24T08:19:15.492124+00:00",
+  "generated_at_utc": "2026-09-25T07:58:02.549561+00:00",
   "scope": "Measured checks of supplied demonstration PDFs; manual items are not automated passes.",
   "units": "bp = PDF points = 1/72 inch; mm = millimeters",
   "documents": [
     {
       "path": "output/pdf/main.pdf",
-      "sha256": "8bd2942a9c2a10d4818abf35ba018e6a6463446ea87a1f796cb7f5028b7f97ff",
+      "sha256": "b7cb7f87afea749f3595a65f12364eecdf364d7853c4cbf74af66ca247c482aa",
       "checks": [
         {
           "name": "a4_page_sizes",
@@ -78,63 +78,63 @@
           ],
           "measured": [
             {
-              "name": "CFZWTV+CMR8",
+              "name": "AAMKEI+TimesNewRomanPS-BoldMT",
               "embedded": true
             },
             {
-              "name": "DFMDFR+TimesNewRomanPS-ItalicMT",
+              "name": "FYZMHA+TimesNewRomanPSMT",
               "embedded": true
             },
             {
-              "name": "DSOVPC+TimesNewRomanPS-BoldMT",
+              "name": "GJSYYE+CMMI8",
               "embedded": true
             },
             {
-              "name": "EICSBH+DFKaiShu-SB-Estd-BF",
+              "name": "GUVLNA+TimesNewRomanPS-ItalicMT",
               "embedded": true
             },
             {
-              "name": "FJMOBU+CMR12",
+              "name": "GXZFWW+DFKaiShu-SB-Estd-BF",
               "embedded": true
             },
             {
-              "name": "FJTUJU+CMMI8",
+              "name": "HMQPHI+DFKaiShu-SB-Estd-BF",
               "embedded": true
             },
             {
-              "name": "KQXUWH+CMSY10",
+              "name": "IAFWCM+DFKaiShu-SB-Estd-BF",
               "embedded": true
             },
             {
-              "name": "OYXIMV+TimesNewRomanPSMT",
+              "name": "LVKVOQ+CMEX10",
               "embedded": true
             },
             {
-              "name": "SHFMCQ+DFKaiShu-SB-Estd-BF",
+              "name": "MVEXAA+CMR8",
               "embedded": true
             },
             {
-              "name": "STEVOL+DFKaiShu-SB-Estd-BF",
+              "name": "OTQKZA+CMSY10",
               "embedded": true
             },
             {
-              "name": "SVSNNF+DFKaiShu-SB-Estd-BF",
+              "name": "QSGIUV+CMR12",
               "embedded": true
             },
             {
-              "name": "TQHKEX+DFKaiShu-SB-Estd-BF",
+              "name": "RFVGQN+DFKaiShu-SB-Estd-BF",
               "embedded": true
             },
             {
-              "name": "VUIQTS+CMEX10",
+              "name": "SKVODK+CMMI12",
               "embedded": true
             },
             {
-              "name": "YFWTNS+DFKaiShu-SB-Estd-BF",
+              "name": "UQDSYU+DFKaiShu-SB-Estd-BF",
               "embedded": true
             },
             {
-              "name": "YTUSXW+CMMI12",
+              "name": "XYWLMJ+DFKaiShu-SB-Estd-BF",
               "embedded": true
             }
           ]
@@ -146,7 +146,7 @@
             1
           ],
           "measured": {
-            "chinese_characters": 1190,
+            "chinese_characters": 1181,
             "nonmath_latin_characters": 750,
             "excluded_math_latin_characters": 21,
             "excluded_math_fonts": [
@@ -339,8 +339,8 @@
             "page_bounds": [
               {
                 "physical_page": 1,
-                "left_mm": 60.6781,
-                "right_mm": 60.669,
+                "left_mm": 58.4334,
+                "right_mm": 58.4433,
                 "top_mm": 31.4209,
                 "bottom_mm": 26.1712
               },
@@ -396,7 +396,7 @@
               {
                 "physical_page": 9,
                 "left_mm": 19.8315,
-                "right_mm": 20.0025,
+                "right_mm": 20.0036,
                 "top_mm": 28.6561,
                 "bottom_mm": 53.2507
               },
@@ -703,7 +703,7 @@
               ]
             },
             {
-              "text": "研究生：王小明撰",
+              "text": "研究生：林中正撰",
               "baseline": 225.07,
               "x0": 189.638,
               "x1": 405.614,
@@ -714,21 +714,21 @@
               ]
             },
             {
-              "text": "指導教授：林○○博士",
+              "text": "指導教授：林清江博士",
               "baseline": 189.07,
-              "x0": 172.142,
-              "x1": 423.134,
+              "x0": 165.638,
+              "x1": 429.614,
               "top": 633.595,
-              "bottom": 658.003,
+              "bottom": 657.595,
               "sizes": [
                 24.0
               ]
             },
             {
-              "text": "中華民國115年09月",
+              "text": "中華民國999年06月",
               "baseline": 79.37,
-              "x0": 184.083,
-              "x1": 411.192,
+              "x0": 183.638,
+              "x1": 411.638,
               "top": 743.296,
               "bottom": 767.704,
               "sizes": [
@@ -793,7 +793,7 @@
               "landmark": "第二段示範",
               "expected_bp": 12,
               "row": {
-                "text": "第二段示範段落間不額外加空白行。研究問題、研究對象與研究方法均須由作者填入實",
+                "text": "第二段示範段落間不額外加空白行。請填入實際研究問題、研究對象與研究方法；本模",
                 "baseline": 578.45,
                 "x0": 80.693,
                 "x1": 538.577,
@@ -1178,7 +1178,7 @@
     },
     {
       "path": "output/pdf/proposal.pdf",
-      "sha256": "a56bc0a2ec899975f4ba217e23ee3c4389029bc0b3921efd4fe0301f786c162c",
+      "sha256": "9ab43752a17461100b0987f952cb6db0cacecf1360a1febe6720dcca051f5195",
       "checks": [
         {
           "name": "a4_page_sizes",
@@ -1235,63 +1235,63 @@
           ],
           "measured": [
             {
-              "name": "AQJFDI+CMEX10",
+              "name": "BIRONT+TimesNewRomanPSMT",
               "embedded": true
             },
             {
-              "name": "DSXCVE+DFKaiShu-SB-Estd-BF",
+              "name": "BRBTYS+CMR8",
               "embedded": true
             },
             {
-              "name": "GJNTWQ+TimesNewRomanPS-BoldMT",
+              "name": "DPWVOH+TimesNewRomanPS-BoldMT",
               "embedded": true
             },
             {
-              "name": "HLXHIH+DFKaiShu-SB-Estd-BF",
+              "name": "HPVFLW+DFKaiShu-SB-Estd-BF",
               "embedded": true
             },
             {
-              "name": "HUUFZR+DFKaiShu-SB-Estd-BF",
+              "name": "KJTHYO+DFKaiShu-SB-Estd-BF",
               "embedded": true
             },
             {
-              "name": "KCNRHZ+CMSY10",
+              "name": "LHLZOS+CMMI12",
               "embedded": true
             },
             {
-              "name": "MSGHHD+DFKaiShu-SB-Estd-BF",
+              "name": "NBHARV+DFKaiShu-SB-Estd-BF",
               "embedded": true
             },
             {
-              "name": "OPNSKU+DFKaiShu-SB-Estd-BF",
+              "name": "OXYVBI+CMSY10",
               "embedded": true
             },
             {
-              "name": "SEDULJ+CMR8",
+              "name": "PDYWBU+DFKaiShu-SB-Estd-BF",
               "embedded": true
             },
             {
-              "name": "SMGOGO+TimesNewRomanPS-ItalicMT",
+              "name": "PTCLAI+CMR12",
               "embedded": true
             },
             {
-              "name": "SNABZG+TimesNewRomanPSMT",
+              "name": "SKSXGU+TimesNewRomanPS-ItalicMT",
               "embedded": true
             },
             {
-              "name": "XBIMUS+DFKaiShu-SB-Estd-BF",
+              "name": "SPAVTO+DFKaiShu-SB-Estd-BF",
               "embedded": true
             },
             {
-              "name": "XUOAOH+CMR12",
+              "name": "WIDUGX+CMMI8",
               "embedded": true
             },
             {
-              "name": "ZDDXYA+CMMI8",
+              "name": "XSJEMQ+DFKaiShu-SB-Estd-BF",
               "embedded": true
             },
             {
-              "name": "ZYPJZD+CMMI12",
+              "name": "ZUXZPW+CMEX10",
               "embedded": true
             }
           ]
@@ -1303,7 +1303,7 @@
             1
           ],
           "measured": {
-            "chinese_characters": 924,
+            "chinese_characters": 917,
             "nonmath_latin_characters": 391,
             "excluded_math_latin_characters": 21,
             "excluded_math_fonts": [
@@ -1464,8 +1464,8 @@
             "page_bounds": [
               {
                 "physical_page": 1,
-                "left_mm": 60.6781,
-                "right_mm": 60.669,
+                "left_mm": 58.4334,
+                "right_mm": 58.4433,
                 "top_mm": 31.4209,
                 "bottom_mm": 26.1712
               },
@@ -1493,7 +1493,7 @@
               {
                 "physical_page": 5,
                 "left_mm": 19.8315,
-                "right_mm": 20.0025,
+                "right_mm": 20.0036,
                 "top_mm": 28.6561,
                 "bottom_mm": 53.2507
               },
@@ -1792,7 +1792,7 @@
               ]
             },
             {
-              "text": "研究生：王小明撰",
+              "text": "研究生：林中正撰",
               "baseline": 225.07,
               "x0": 189.638,
               "x1": 405.614,
@@ -1803,21 +1803,21 @@
               ]
             },
             {
-              "text": "指導教授：林○○博士",
+              "text": "指導教授：林清江博士",
               "baseline": 189.07,
-              "x0": 172.142,
-              "x1": 423.134,
+              "x0": 165.638,
+              "x1": 429.614,
               "top": 633.595,
-              "bottom": 658.003,
+              "bottom": 657.595,
               "sizes": [
                 24.0
               ]
             },
             {
-              "text": "中華民國115年09月",
+              "text": "中華民國999年06月",
               "baseline": 79.37,
-              "x0": 184.083,
-              "x1": 411.192,
+              "x0": 183.638,
+              "x1": 411.638,
               "top": 743.296,
               "bottom": 767.704,
               "sizes": [
@@ -1882,7 +1882,7 @@
               "landmark": "第二段示範",
               "expected_bp": 12,
               "row": {
-                "text": "第二段示範段落間不額外加空白行。研究問題、研究對象與研究方法均須由作者填入實",
+                "text": "第二段示範段落間不額外加空白行。請填入實際研究問題、研究對象與研究方法；本模",
                 "baseline": 578.45,
                 "x0": 80.693,
                 "x1": 538.577,
@@ -2267,7 +2267,7 @@
     },
     {
       "path": "output/pdf/spine.pdf",
-      "sha256": "f8c18b1b1a9cbff945528fc103c4dd2d3a2cc467a72bf9fad7e95288f40a1eb3",
+      "sha256": "467703369498601fc55a35eefc04a933d3570a99c5fd04cea1eb69ba4228cc16",
       "checks": [
         {
           "name": "spine_single_page",
@@ -2299,11 +2299,11 @@
           ],
           "measured": [
             {
-              "name": "FAMWDM+DFKaiShu-SB-Estd-BF",
+              "name": "KVNRTT+DFKaiShu-SB-Estd-BF",
               "embedded": true
             },
             {
-              "name": "PUNHFM+TimesNewRomanPSMT",
+              "name": "PYQHHF+TimesNewRomanPSMT",
               "embedded": true
             }
           ]
@@ -2612,7 +2612,7 @@
               ]
             },
             {
-              "text": "王",
+              "text": "林",
               "baseline": 78.52,
               "x0": 15.26,
               "x1": 27.26,
@@ -2623,7 +2623,7 @@
               ]
             },
             {
-              "text": "小",
+              "text": "中",
               "baseline": 66.52,
               "x0": 15.26,
               "x1": 27.26,
@@ -2634,7 +2634,7 @@
               ]
             },
             {
-              "text": "明",
+              "text": "正",
               "baseline": 54.52,
               "x0": 15.26,
               "x1": 27.26,
@@ -2664,14 +2664,14 @@
             8
           ],
           "measured": {
-            "extracted_top_to_bottom": "115級國立中正大學資訊管理研究所碩士論文論文格式驗證範例王小明撰",
+            "extracted_top_to_bottom": "999級國立中正大學資訊管理研究所碩士論文論文格式驗證範例林中正撰",
             "markers": [
               "級",
               "國立中正大學",
               "研究所",
               "論文",
               "論文格式驗證範例",
-              "王小明",
+              "林中正",
               "撰"
             ],
             "positions": [

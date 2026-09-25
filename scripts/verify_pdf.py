@@ -440,7 +440,7 @@ def verify_spine(path):
                      bool(cjk_rows) and all(len(compact(row["text"])) == 1 for row in cjk_rows),
                      [simple_row(row) for row in cjk_rows], [8])
         actual = compact("".join(row["text"] for row in spine_rows))
-        markers = ["級", "國立中正大學", "研究所", "論文", "論文格式驗證範例", "王小明", "撰"]
+        markers = ["級", "國立中正大學", "研究所", "論文", "論文格式驗證範例", "林中正", "撰"]
         cursor = 0
         positions = []
         for marker in markers:
